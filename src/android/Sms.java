@@ -108,7 +108,7 @@ public class Sms extends CordovaPlugin {
 					String phoneNumber = args.getJSONArray(0).join(separator).replace("\"", "");
 					String message = args.getString(1);
 					String method = args.getString(2);
-                    String slot = Sms.this.args.getString(4);
+                    String slot = args.getString(4);
 					boolean replaceLineBreaks = Boolean.parseBoolean(args.getString(3));
 
 					// replacing \n by new line if the parameter replaceLineBreaks is set to true
